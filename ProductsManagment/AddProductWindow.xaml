@@ -1,0 +1,20 @@
+﻿<Window x:Class="ProductsManagment.AddProductWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProductsManagment"
+        mc:Ignorable="d"
+        Title="AddProductWindow" Height="450" Width="800">
+    <Grid Background="#e6e7e5">
+        <StackPanel Margin="20">
+            <TextBlock FontSize="30" Margin="0, 0, 0, 10" FontWeight="Bold">Add Product</TextBlock>
+            <TextBlock FontSize="20">Title:</TextBlock>
+            <TextBox Name="titleTextBox" FontSize="20" Padding="5" Margin="0, 4, 0, 12" />
+            <TextBlock FontSize="20">Price:</TextBlock>
+            <TextBox Name="priceTextBox" FontSize="20"  Padding="5" Margin="0, 4, 0, 12" />
+            <Button Foreground="White" Style="{DynamicResource MainButton}" Background="#3e3e3e" Height="40" Click="addProductButton_Click" Name="addProductButton" FontSize="18" Padding="5">ADD</Button>
+            <Button Foreground="White" Style="{DynamicResource MainButton}" Background="#3e3e3e" Height="40" Click="goHomeButton_Click" Name="goHomeButton" FontSize="18" Margin="0, 8, 0, 0" Padding="5">GO BACK</Button>
+        </StackPanel>
+    </Grid>
+</Window>
